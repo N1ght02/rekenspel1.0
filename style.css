@@ -1,0 +1,84 @@
+body{
+    background-image: url(achtergrond.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#wrapper{
+   background-color: #9dafcc;
+   width:30em;
+   height: 30em;
+   padding: 4em;
+   border: ridge 9px;
+   box-sizing: border-box;
+   position: fixed;
+   left: 35%;
+   top: 50%;
+}
+
+#wrapper > *{
+    margin: 3px;
+}
+
+#wrapper > *:not(:first-child){
+    position: relative;
+
+}
+
+
+#head{
+font-size: 50px;
+    font-weight: bolder;
+    color: #fff;
+    text-align: center;
+    animation-name: flash;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+#feedback{
+
+  width: 180px;
+  display: block;
+  text-align: center;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+#myAnswer:focus{
+    background-color: ;
+}
+
+#myAssignment{
+
+    font-size: 3em;
+      color: #fff;
+      text-align: center;
+      animation-name: flash;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@font-face{
+
+    font-family: MyFont;
+    src: url()
+}
+@-webkit-keyframes flash {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #dd0808, 0 0 40px #dd0808, 0 0 50px #dd0808, 0 0 60px #dd0808, 0 0 70px #dd0808;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #1c1a1a, 0 0 40px #1c1a1a, 0 0 50px #1c1a1a, 0 0 60px #1c1a1a, 0 0 70px #1c1a1a, 0 0 80px #1c1a1a;
+  }
+}
